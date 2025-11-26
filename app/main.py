@@ -13,4 +13,7 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+@app.get("/")
+def get_status():
+    return "Status OK"
 
